@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: NanumGothic;
+    src: url(/fonts/NanumGothic-Regular.ttf);
+}
+
+html, body{
+    font-family: NanumGothic, sans-serif;
+}
+ul li{
+    list-style: none;
+}
+.nl-col-md-4{
+    width: 33.3333%;
+}
+.nl-col-sm-12{
+    width: 100%;
+}
+.nl-max{
+    width: 100%;
+}
+.bg-grey{
+    background-color: #f2f2f2;
+}
+.color-red{
+    color: #DF0A15;
+}
+.bold-400{
+    font-weight: 400;
+}
+.bold-700{
+    font-weight: 700;
+}
+.bold-800{
+    font-weight: 800;
+}
+.header-bar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background: #DF0A15;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo .nl-img-logo{
+    margin-top: 5px;
+    margin-left: 30px;
+    display: block;
+}
+.menu{
+    display: block;
+    margin: auto 30px auto auto;
+}
+.nl-page-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 70px;
+    
+}
+.nl-page-wrapper .contain{
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+.nl-pad-rl-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nl-p1-sel{
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid #000;
+}
+.nl-row{
+    display: flex;
+}
+.nl-row-p1{
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+
+.nl-ul-list .nl-li-list{
+    border: 1px solid #494949;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 10px;
+}
+.nl-col-items-box{
+    padding: 0 20px;
+    text-align: center;
+    width: 30%;
+}
+.nl-col-items-box .nl-items-box{
+    height: 100%;
+    max-width: 100%;
+    display: inline-block;
+}
+.nl-p-line{
+    line-height: 20px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.nl-icon-list{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.nl-btn-sm-p1{
+    margin-left: 20px;
+    padding: 5px 10px 7px;
+    border-radius: 30px;
+    border: 1px solid #c4c4c4;
+}
+.nl-arrow-right{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    top: 2px;
+}
+.nl-arrow-right:before{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    bottom: 2px;
+    right: 0;
+    transform: rotate(-45deg);
+}
+.nl-tile-line-1{
+    margin-bottom: 15px;
+}
+.nl-tile-line-1>h2{
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: 800;
+    line-height: 33px;
+}
+.nl-frm-p1{
+    padding: 5px 22px;
+    border-radius: 30px;
+    border: 1px solid #c4c4c4;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.nl-frm-p1 span{
+    padding-bottom: 2px;
+}
+.nl-sel-num{
+    height: 26px;
+    width: 45px;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.nl-span-price{
+    margin-left: 20px;
+}
+.nl-col-1{
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+.nl-col-1 .nl-img-down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.nl-row3-p1{
+    margin-top: 30px;
+}
+.nl-row3-p1 div p{
+    padding: 8px 0;
+}
+.nl-text-3{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.nl-row-detail{
+    width: 38%;
+    font-weight: 700;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+}
+.nl-row-total-price{
+    width: 32%;
+    font-weight: 700;
+}
