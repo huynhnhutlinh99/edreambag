@@ -1087,3 +1087,6 @@ ul li{
       margin-right: 50px;
     }
   }
+  .bold{
+    font-weight: bold;
+  }
