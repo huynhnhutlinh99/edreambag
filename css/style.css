@@ -861,17 +861,18 @@ ul li{
   
   .nvn-content-left .form-group_item label {
     display: block;
-    margin: 30px 0px 10px 20px;
+    margin: 22px 0px 7px 20px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .nvn-content-left .form-group_item input {
     background-color: white;
+    font-weight: bold;
   }
   
   .nvn-content-left .form-group .line {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #494949;
   }
   
   .nvn-content-left .form-group .bt-title {
@@ -896,7 +897,7 @@ ul li{
   }
   
   .nvn-content-left .form .nvn-bt p {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   
   .nvn-content-left .form-action {
@@ -931,27 +932,28 @@ ul li{
     width: 20px;
     height: 20px;
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 1px solid #9a9a9a;
     cursor: pointer;
   }
   
   .nvn-content-left .form-action_item span {
     padding-left: 10px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 16px;
     width: calc(100% - 20px);
   }
   
   .nvn-content-right {
-    margin: 20px 0 40px;
+    margin: 20px 0 60px;
     padding: 0 20px;
   }
   
   .nvn-content-right .gutter {
-    border: 1px solid #999;
+    border: 1px solid #9a9a9a;
     border-radius: 25px;
     padding: 20px;
     background-color: white;
+    height: 628px;
   }
   
   .nvn-content-right .bold {
@@ -960,7 +962,7 @@ ul li{
   
   .nvn-content-right .title {
     padding: 5px 20px 10px;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-right .title h3 {
@@ -972,61 +974,69 @@ ul li{
     color: #000;
   }
   
+  .pt-12{
+    padding-top: 12px;
+  }
   .nvn-content-right .option {
     padding: 10px 15px;
     font-size: 14px;
   }
   
   .nvn-content-right .option h4.it-title {
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
   }
   
   .nvn-content-right .option .option-item {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   
   .nvn-content-right .option .option-item ul li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   
   .nvn-content-right .option .size {
-    margin-top: 30px;
+    margin-top: 23px;
   }
-  
+  .pt-9{
+    padding-top: 9px;
+  }
+  .pt-6{
+    padding-top: 6px;
+  }
   .nvn-content-right .option .total {
-    margin-top: 35px;
-    padding: 15px 0 25px;
-    border-bottom: 1px solid #999;
+    margin-top: 38px;
+    padding: 10px 0 21px;
+    border-bottom: 1px solid #494949;
   }
   
   .nvn-content-right .option .total p {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .nvn-content-right .line {
-    margin-top: 15px;
-    border-bottom: 1px solid #999;
+    margin-top: 14px;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-right .final {
-    padding: 25px 0 0;
+    padding: 20px 0 0;
   }
   
   .nvn-content-right .final p {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
   }
   
   .nvn-content-right .nvn-btn {
     display: block;
-    border-radius: 999px;
+    border-radius: 494949px;
     border: none;
     outline: none;
-    margin: 40px auto 0;
-    padding: 12px 25px;
+    margin: 48px auto 0;
+    padding: 7.5px 0;
     background-color: #000699;
     color: white;
     font-weight: bold;
@@ -1035,7 +1045,7 @@ ul li{
   
   @media only screen and (min-width: 320px) {
     .nvn-content-right .nvn-btn {
-      width: 80%;
+      width: 75%;
     }
   }
   
@@ -1045,7 +1055,9 @@ ul li{
     }
   }
   
-  .nvn-footer {
+  .nl-ctn-at-bt.nvn-footer {
+    margin-top: 53px;
+    height: 40px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1054,7 +1066,7 @@ ul li{
   }
   
   .nvn-footer .nvn-middle {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
   }
   
