@@ -97,6 +97,7 @@ ul li{
 }
 .nl-row{
     display: flex;
+    flex-wrap: wrap;
 }
 .nl-row-p1{
     margin-top: 30px;
@@ -313,6 +314,7 @@ ul li{
 }
 .nl-bottom-total-price{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 40px;
     text-align: right;
@@ -344,7 +346,7 @@ ul li{
     font-weight: 700;
 }
 .nl-ctn-at-bt .nl-cell{
-    width: 333.3333%;
+    width: 33.3333%;
 }
 .nl-ctn-at-bt .nl-cell:nth-child(1){
     padding-left: 30px;
@@ -494,9 +496,14 @@ ul li{
     height: 40px;
     border: 1px solid #c4c4c4;
     background-color: #f2f2f2;
-    padding: 0 15px;
     border-radius: 5px;
     color: #9a9a9a;
+}
+.nl-col-row2-p3 input{
+  padding: 0 15px;
+}
+.nl-col-row2-p3 select{
+  padding: 0 12px;
 }
 .nl-ctn-row2-p3{
     padding-left: 22px;
@@ -582,7 +589,107 @@ ul li{
         width: 100%;
     }
 }
+@media (max-width: 975px){
+  .nl-li-list>div{
+    width: 100%;
+    padding-bottom: 20px;
+    
+  }
+  .nl-li-list>div:nth-child(1){
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .nl-li-list>div:nth-child(2){
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .nl-row-detail{
+    border-left: 0;
+    border-right: 0;
+  }
+  .nl-row-3-ship-frm .nl-col3{
+    margin-top: 20px;
+  }
+  .nl-row-3-ship-frm .nl-col3-line2 input:first-child{
+    margin-left: 0;
+  }
+  .nl-row3-p1 .nl-col-1{
+    width: 100%;
+    text-align: center;
+  }
+  .nl-col-1 .nl-img-down{
+    position: relative;
+    display: inline-block;
+  }
+  .nl-ctn-at-bt-p1{
+    height: auto;
+  }
+  .nl-ctn-at-bt-p1 .nl-cell:nth-child(1){
+    width: 100%;
+    text-align: right;
+    padding: 20px 20px 5px;
+  }
+  .nl-ctn-at-bt .nl-cell:nth-child(2) {
+    width: 100%;
+    text-align: right;
+    padding: 5px 20px;
+  }
+  .nl-ctn-at-bt .nl-cell:nth-child(3){
+    padding: 5px 20px 20px;
+    width: 100%;
+    text-align: right;
+  }
 
+  .nl-bottom-total-price__p2{
+    height: auto;
+  }
+  .nl-bottom-total-price__p2{
+    padding-top: 10px;
+  }
+  .nl-bottom-total-price__p2 .nl-col__p2{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+  .nl-ctn-at-bt-p2 span{
+    padding: 0 30px;
+  }
+  .nl-ctn-at-bt-p2 span:nth-child(2){
+    text-align: right;
+  }
+
+  .nl-li-list__p3 .nl-bor-left{
+    border-left: 0;
+  }
+  .nl-li-list__p3 .nl-pad-rl-20{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nl-div-line2-row2-p3 .nl-lbl-2{
+    margin-left: 30px;
+  }
+  .nl-li-list__p3 .nl-tile-line-1>h2{
+    margin-left: 0;
+  }
+  .nl-p-col-1-p3,
+  .nl-ul-col-1-p3,
+  .nl-ctn-row2-p3{
+    padding-left: 0;
+  }
+  .nl-col-row2-p3{
+    width: 100%;
+  }
+  .nl-col-row2-p3.nl-col-2-row2-p3{
+    padding: 10px 0;
+  }
+  .nl-li-list__p3>div:nth-child(2){
+    border-bottom: 0;
+  }
+  .nl-li-list__p3 .nl-p-total-price span{
+    padding: 0;
+    font-size: 13px;
+  }
+}
 
 .flex{
     display: flex;
