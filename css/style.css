@@ -62,7 +62,7 @@ ul li{
 }
 .nl-page-wrapper .contain{
     background-color: #fff;
-    padding: 0 15px;
+    padding: 0 9px;
 }
 
 .nl-pad-rl-20 {
@@ -71,37 +71,44 @@ ul li{
 }
 
 .nl-p1-sel{
-    height: 30px;
+    height: 51px;
     border-radius: 0;
     border: 1px solid #000;
     background-color: #fff;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
 }
 .nl-p1-sel>p{
     position: relative;
     height: 100%;
-    min-width: 96px;
+    min-width: 106px;
     display: inline-block;
-    line-height: 28px;
-    padding-left: 18px;
+    line-height: 50px;
+    padding-left: 38px;
+    font-weight: 700;
+    color: #6a6a6a;
+    font-size: 20px;
 }
 .nl-p1-sel>p::after{
     position: absolute;
     content: "";
     border-style: solid;
-    border-width: 6px;
+    border-width: 8px;
     border-color:  transparent transparent #000 transparent;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    margin-top: -5px;
+    margin-top: -2px;
 }
 .nl-row{
     display: flex;
     flex-wrap: wrap;
 }
 .nl-row-p1{
-    margin-top: 30px;
+    margin-top: 29px;
     border: 1px solid #000;
+    border-radius: 30px;
+    border-radius: 30px;
 }
 
 .nl-ul-list .nl-li-list{
@@ -163,7 +170,7 @@ ul li{
     margin-bottom: 15px;
 }
 .nl-tile-line-1>h2{
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 20px;
     font-weight: 800;
     line-height: 33px;
@@ -175,6 +182,8 @@ ul li{
     font-size: 18px;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .nl-frm-p1 span{
     padding-bottom: 2px;
@@ -316,11 +325,13 @@ ul li{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 40px;
+    height: 51px;
     text-align: right;
     border: 1px solid #000;
     align-items: center;
     justify-content: flex-end;
+    border-bottom-left-radius: 29px;
+    border-bottom-right-radius: 29px;
 }
 .nl-bottom-total-price>span{
     display: inline-block;
@@ -590,6 +601,9 @@ ul li{
     }
 }
 @media (max-width: 975px){
+  body, html{
+    font-size: 75%;
+  }
   .nl-li-list>div{
     width: 100%;
     padding-bottom: 20px;
@@ -597,15 +611,21 @@ ul li{
   }
   .nl-li-list>div:nth-child(1){
     margin-bottom: 20px;
-    border-bottom: 1px solid #c4c4c4;
+    /* border-bottom: 1px solid #c4c4c4; */
   }
   .nl-li-list>div:nth-child(2){
     margin-bottom: 20px;
-    border-bottom: 1px solid #c4c4c4;
+    /* border-bottom: 1px solid #c4c4c4; */
   }
   .nl-row-detail{
     border-left: 0;
     border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nl-row-total-price{
+    padding-left: 0;
+    padding-right: 0;
   }
   .nl-row-3-ship-frm .nl-col3{
     margin-top: 20px;
@@ -1387,104 +1407,16 @@ ul li{
 
   /* login */
   .modal{
-      width: 450px;
+      width: 500px;
       margin: 0 auto;
-      text-align: center;
   }
   .form-title{
     margin: 45px 0 0;
-    
   }
   .form-title img{
-    height: 32px;
-    margin-right: 14px;
+
   }
   .form-title h3{
     font-size: 25px;
     font-weight: 700;
   }
-  .modal .form-group label{
-    display: block;
-    text-align: left;
-    margin: 30px 15px 9px;
-    font-size: 18px;
-  }
-  .modal .form-group input{
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #9a9a9a;
-    padding: 8px 14px 0;
-    font-size: 16px;
-}
-.modal #remember{
-    display: none;
-}
-.modal .form-group .remember{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 2px;
-    border: 1px solid #9a9a9a;
-  margin: 0 14px 0 0;
-}  
-.modal .nvn-btn {
-  display: block;
-  border-radius: 494949px;
-  border: none;
-  outline: none;
-  margin: 48px auto 0;
-  padding: 7.5px 0;
-  background-color: #000699;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  height: 40px;
-}
-
-@media only screen and (min-width: 320px) {
-    .modal .nvn-btn {
-    width: 75%;
-  }
-
-}@media only screen and (min-width: 768px) {
-    .modal .nvn-btn {
-        width: 250px;
-       
-  }
-}
-.login-another button{
-    width: 72%;
-    margin: 10px auto;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    padding: 0 25px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.login-another img{
-    width: 22px;
-}
-.login-another span{
-   display: block;
-   margin-left: 27px;
-}
-.login-another .kakao{
-    background-color: rgb(244, 229, 0);
-}
-.login-another .google{
-    border: 1px solid #9a9a9a ;
-    background-color: white;
-}
-
-.dont-have{
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 26px;
-   
-}
- a{
-        color: black;
-    }
