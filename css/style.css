@@ -7,7 +7,14 @@
     font-family: NanumGothic;
     src: url(/fonts/NanumGothic-Regular.ttf);
 }
-
+@font-face{
+  font-family: NanumGothic;
+  src: url(/fonts/NanumGothic-Bold.ttf);
+}
+@font-face{
+  font-family: NanumGothic;
+  src: url(/fonts/NanumGothic-ExtraBold.ttf);
+}
 html, body{
     font-family: NanumGothic, sans-serif;
 }
@@ -170,7 +177,7 @@ ul li{
     margin-bottom: 15px;
 }
 .nl-tile-line-1>h2{
-    font-size: 20px;
+    font-size: 1.125rem;
     margin-left: 20px;
     font-weight: 800;
     line-height: 33px;
@@ -218,9 +225,12 @@ ul li{
 .nl-row3-p1 div p{
     padding: 8px 0;
 }
+.nl-row3-p1 div p:last-child{
+  padding-bottom: 0;
+}
 .nl-text-3{
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 1.25rem;
+    font-weight: 900;
 }
 
 .nl-row-detail{
@@ -228,10 +238,14 @@ ul li{
     font-weight: 700;
     border-left: 1px solid #c4c4c4;
     border-right: 1px solid #c4c4c4;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .nl-row-total-price{
     width: 32%;
     font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .nl-row-3-ship-frm{
     width: 100%;
@@ -254,8 +268,8 @@ ul li{
     margin-bottom: 4px;
 }
 .nl-row-3-ship-frm  .nl-row .nl-col1{
-    width: 64px;
-    padding-right: 10px;
+    width: 62px;
+    padding-right: 8px;
 }
 .nl-row-3-ship-frm  .nl-row .nl-col1 input,
 .nl-row-3-ship-frm  .nl-row .nl-col2 input{
@@ -602,7 +616,7 @@ ul li{
 }
 @media (max-width: 975px){
   body, html{
-    font-size: 75%;
+    font-size: 14px;
   }
   .nl-li-list>div{
     width: 100%;
@@ -611,12 +625,8 @@ ul li{
   }
   .nl-li-list>div:nth-child(1){
     margin-bottom: 20px;
-    /* border-bottom: 1px solid #c4c4c4; */
   }
-  .nl-li-list>div:nth-child(2){
-    margin-bottom: 20px;
-    /* border-bottom: 1px solid #c4c4c4; */
-  }
+
   .nl-row-detail{
     border-left: 0;
     border-right: 0;
@@ -627,20 +637,17 @@ ul li{
     padding-left: 0;
     padding-right: 0;
   }
-  .nl-row-3-ship-frm .nl-col3{
+  /* .nl-row-3-ship-frm .nl-col3{
     margin-top: 20px;
-  }
+  } */
   .nl-row-3-ship-frm .nl-col3-line2 input:first-child{
-    margin-left: 0;
+    margin-left: 8px;
   }
   .nl-row3-p1 .nl-col-1{
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
-  .nl-col-1 .nl-img-down{
-    position: relative;
-    display: inline-block;
-  }
+
   .nl-ctn-at-bt-p1{
     height: auto;
   }
