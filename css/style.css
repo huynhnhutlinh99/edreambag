@@ -485,6 +485,7 @@ ul li{
     position: relative;
     line-height: 24px;
     padding-left: 12px;
+    font-weight: 300;
 }
 .nl-ul-col-1-p3 li::after{
     position: absolute;
@@ -591,6 +592,9 @@ ul li{
     padding-right: 6px;
     
 }
+.nl-bottom-total-price.nl-bottom-total-price__p2{
+  flex-wrap: nowrap;
+}
 .nl-p-line-1-row-p3{
     font-size: 17px;
     font-weight: bold;
@@ -669,8 +673,6 @@ ul li{
 
   .nl-bottom-total-price__p2{
     height: auto;
-  }
-  .nl-bottom-total-price__p2{
     padding-top: 10px;
   }
   .nl-bottom-total-price__p2 .nl-col__p2{
