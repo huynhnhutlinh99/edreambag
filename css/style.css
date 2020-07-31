@@ -179,7 +179,7 @@ ul li{
 .nl-tile-line-1>h2{
     font-size: 1.125rem;
     margin-left: 20px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 33px;
 }
 .nl-frm-p1{
@@ -234,7 +234,7 @@ ul li{
 }
 
 .nl-row-detail{
-    width: 38%;
+    width: 36%;
     font-weight: 700;
     border-left: 1px solid #c4c4c4;
     border-right: 1px solid #c4c4c4;
@@ -242,7 +242,7 @@ ul li{
     padding-right: 20px;
 }
 .nl-row-total-price{
-    width: 32%;
+    width: 34%;
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
@@ -337,7 +337,6 @@ ul li{
 }
 .nl-bottom-total-price{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 51px;
     text-align: right;
@@ -361,6 +360,8 @@ ul li{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .nl-ctn-at-bt span,
 .nl-ctn-at-bt a{
@@ -458,6 +459,8 @@ ul li{
     justify-content: flex-end;
     font-weight: 700;
     color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 .nl-ctn-at-bt-p2 span{
     display: inline-block;
@@ -592,9 +595,7 @@ ul li{
     padding-right: 6px;
     
 }
-.nl-bottom-total-price.nl-bottom-total-price__p2{
-  flex-wrap: nowrap;
-}
+
 .nl-p-line-1-row-p3{
     font-size: 17px;
     font-weight: bold;
@@ -628,9 +629,11 @@ ul li{
     
   }
   .nl-li-list>div:nth-child(1){
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
-
+  .nl-li-list>div:nth-child(1) .nl-items-box{
+    max-height: 100px;
+  }
   .nl-row-detail{
     border-left: 0;
     border-right: 0;
@@ -657,23 +660,56 @@ ul li{
 
   .nl-ctn-at-bt-p1{
     height: auto;
+    padding: 15px 0;
   }
-  
-
+  .nl-bt-left-part-p1{
+    width: 45%;
+  }
+  .nl-ctn-at-bt p.nl-bt-left-part-p1 span:nth-child(2){
+    margin-left: 0;
+  }
+  .nl-bt-right-part-p1 .nl-2{
+    padding-right: 20px !important;
+  }
+  .nl-bt-left-part-p1 span:first-child{
+    margin-bottom: 10px;
+  }
+  .nl-bt-right-part-p1{
+    flex-direction: column;
+    text-align: right;
+  }
+  .nl-bt-right-part-p1 .nl-1{
+    width: 100%;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .nl-ul-list-p2 .nl-li-list{
+    padding: 20px 20px 5px;
+  }
   .nl-bottom-total-price__p2{
     height: auto;
     padding-top: 10px;
+    flex-wrap: wrap;
   }
   .nl-bottom-total-price__p2 .nl-col__p2{
     width: 100%;
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 700;
+  }
+  .nl-ctn-at-bt-p2{
+    height: auto;
+    flex-direction: column;
+    padding: 15px 0;
   }
   .nl-ctn-at-bt-p2 span{
     padding: 0 30px;
+    margin-bottom: 10px;
   }
   .nl-ctn-at-bt-p2 span:nth-child(2){
-    text-align: right;
+    margin-bottom: 0;
   }
 
   .nl-li-list__p3 .nl-bor-left{
