@@ -370,9 +370,9 @@ ul li{
 .nl-ctn-at-bt span{
     font-weight: 700;
 }
-.nl-ctn-at-bt .nl-cell{
+/* .nl-ctn-at-bt .nl-cell{
     width: 33.3333%;
-}
+} */
 .nl-ctn-at-bt .nl-cell:nth-child(1){
     padding-left: 30px;
 }
@@ -651,25 +651,14 @@ ul li{
     width: 50%;
     text-align: center;
   }
+  .nl-row3-p1 .nl-col-2{
+    width: 50%;
+  }
 
   .nl-ctn-at-bt-p1{
     height: auto;
   }
-  .nl-ctn-at-bt-p1 .nl-cell:nth-child(1){
-    width: 100%;
-    text-align: right;
-    padding: 20px 20px 5px;
-  }
-  .nl-ctn-at-bt .nl-cell:nth-child(2) {
-    width: 100%;
-    text-align: right;
-    padding: 5px 20px;
-  }
-  .nl-ctn-at-bt .nl-cell:nth-child(3){
-    padding: 5px 20px 20px;
-    width: 100%;
-    text-align: right;
-  }
+  
 
   .nl-bottom-total-price__p2{
     height: auto;
@@ -1847,4 +1836,13 @@ a{
   .main-c-nvn-footer{
     position: absolute;
   }
+}
+
+.nl-bt-right-part-p1{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.nl-bt-right-part-p1 .nl-2{
+  padding-right: 50px;
 }
