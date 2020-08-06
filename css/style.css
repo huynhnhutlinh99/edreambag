@@ -1883,3 +1883,63 @@ a{
 .nl-bt-right-part-p1 .nl-2{
   padding-right: 50px;
 }
+
+/* user-nav page */
+.nl-user-nav .nl-user-nav-ctn{
+  width: 202px;
+}
+.nl-user-nav .nl-user-nav-ctn a{
+  text-decoration: none;
+}
+.nl-list-user-nav{
+  position: relative;
+  width: 100%;
+  border: 1px solid #777;
+}
+.nl-list-user-nav li{
+  height: 51px;
+  border-bottom: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+}
+.nl-list-user-nav li:last-child{
+  border-bottom: 0;
+}
+.nl-head-user-nav{
+  background-color: #FFD600;
+}
+.nl-head-user-nav .nl-col{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+}
+.nl-head-user-nav .nl-col:last-child{
+  justify-content: flex-end;
+}
+.nl-item-user-nav__link{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.nl-item-user-nav__link:hover,
+.nl-item-user-nav__link.active{
+  background-color: #e6e6e6;
+}
+.nl-item-user-nav__link>div{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nl-item-user-nav__link .nl-ico-part{
+  width: 49px;
+  padding-left: 15px;
+  justify-content: flex-start;
+}
+.nl-item-user-nav__link .nl-name-part{
+  width: calc(100% - 40px);
+  padding-right: 10px;
+}
