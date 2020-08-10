@@ -1914,10 +1914,17 @@ a{
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0 10px;
+  font-size: 15px;
 }
-.nl-head-user-nav .nl-col:last-child{
+.nl-head-user-nav .nl-col-1{
+  padding-left: 10px;
+}
+.nl-head-user-nav .nl-col-2{
   justify-content: flex-end;
+  padding-right: 10px;
+}
+.nl-head-user-nav .nl-col img{
+  margin-right: 5px;
 }
 .nl-item-user-nav__link{
   display: flex;
@@ -1938,6 +1945,21 @@ a{
   width: 49px;
   padding-left: 15px;
   justify-content: flex-start;
+}
+.nl-item-user-nav__link .nl-ico-part .nl-icon__1{
+  height: 21px;
+}
+.nl-item-user-nav__link .nl-ico-part .nl-icon__2{
+  height: 25px;
+}
+.nl-item-user-nav__link .nl-ico-part .nl-icon__3{
+  height: 21px;
+}
+.nl-item-user-nav__link .nl-ico-part .nl-icon__4{
+  height: 24px;
+}
+.nl-item-user-nav__link .nl-ico-part .nl-icon__5{
+  height: 24px;
 }
 .nl-item-user-nav__link .nl-name-part{
   width: calc(100% - 40px);
