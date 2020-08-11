@@ -1,28 +1,30 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 @font-face{
     font-family: NanumGothic;
-    src: url(/fonts/NanumGothic-Regular.ttf);
+    src: url(../fonts/NanumGothic-Regular.ttf);
+    font-weight: 400;
 }
 @font-face{
   font-family: NanumGothic;
-  src: url(/fonts/NanumGothic-Bold.ttf);
+  src: url(../fonts/NanumGothic-Bold.ttf);
+  font-weight: 700;
 }
 @font-face{
   font-family: NanumGothic;
-  src: url(/fonts/NanumGothic-ExtraBold.ttf);
+  src: url(../fonts/NanumGothic-ExtraBold.ttf);
+  font-weight: 800;
 }
 html, body{
     font-family: NanumGothic, sans-serif;
+    font-weight: 400;
 }
 ul li{
     list-style: none;
 }
-
-
 .nl-max{
     width: 100%;
 }
@@ -76,7 +78,7 @@ ul li{
     padding-left: 20px;
     padding-right: 20px;
 }
-
+/* page1 */
 .nl-p1-sel{
     height: 51px;
     border-radius: 0;
@@ -186,7 +188,7 @@ ul li{
     padding: 5px 22px;
     border-radius: 30px;
     border: 1px solid #c4c4c4;
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -198,7 +200,7 @@ ul li{
 .nl-sel-num{
     height: 26px;
     width: 45px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 20px;
     font-weight: bold;
     border-radius: 5px;
@@ -286,6 +288,7 @@ ul li{
 .nl-row-3-ship-frm .nl-col3{
     width: 157px;
 }
+
 .nl-row-3-ship-frm .nl-col3-line1{
     text-align: right;
 }
@@ -338,61 +341,20 @@ ul li{
 .nl-bottom-total-price{
     display: flex;
     width: 100%;
-    height: 51px;
-    text-align: right;
     border: 1px solid #000;
     align-items: center;
     justify-content: flex-end;
     border-bottom-left-radius: 29px;
     border-bottom-right-radius: 29px;
+    padding: 20px 0;
+    background-color: #fff;
 }
-.nl-bottom-total-price>span{
+/* .nl-bottom-total-price>span{
     display: inline-block;
     font-weight: 700;
     margin-right: 48px;
     font-size: 1.065rem;
-}
-.nl-ctn-at-bt{
-    width: 100%;
-    height: 58px;
-    background-color: #494949;
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-.nl-ctn-at-bt span,
-.nl-ctn-at-bt a{
-    color: #fff;
-    display: inline-block;
-}
-.nl-ctn-at-bt span{
-    font-weight: 700;
-}
-/* .nl-ctn-at-bt .nl-cell{
-    width: 33.3333%;
 } */
-.nl-ctn-at-bt .nl-cell:nth-child(1){
-    padding-left: 30px;
-}
-.nl-ctn-at-bt .nl-cell:nth-child(2){
-   text-align: center;
-}
-.nl-ctn-at-bt .nl-cell:nth-child(3){
-    text-align: right;
-    padding-right: 30px;
-}
-.nl-ctn-at-bt p span:nth-child(1){
-    font-size: 14px;
-    font-weight: 400;
- }
-.nl-ctn-at-bt p span:nth-child(2){
-   margin-left: 25px;
-}
-
 
 /*page2*/
 .nl-tt-has-circle{
@@ -450,22 +412,11 @@ ul li{
 .nl-text-right{
     text-align: right;
 }
-.nl-ctn-at-bt-p2 {
-    width: 100%;
-    height: 58px;
-    background-color: #494949;
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-weight: 700;
-    color: #fff;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-.nl-ctn-at-bt-p2 span{
-    display: inline-block;
-    padding-right: 48px;
+.nl-bottom-total-price__p2 .nl-col__p2{
+  padding: 0 20px;
+  text-align: right;
+  line-height: 32px;
+  font-weight: 800;
 }
 
 /*page 3*/
@@ -607,6 +558,13 @@ ul li{
     padding-left: 12px;
     margin-top: 20px;
 }
+
+.nl-span-at-bt__p2{
+  padding-right: 20px;
+  font-weight: 800;
+  line-height: 32px;
+  font-size: 1.125rem;
+}
 @media (min-width: 768px){
     .nl-col-md-8{
         width: 66.6666%;
@@ -614,10 +572,52 @@ ul li{
     .nl-col-md-4{
         width: 33.3333%;
     }
+    .nl-text-at-bt__p1 span, .nl-text-at-bt__p2 span, .nl-text-at-bt__p2 a{
+      display: inline-block !important;
+    }
+    .nl-text-at-bt__p2{
+      text-align: right;
+    }
 }
 @media (min-width: 320px){
     .nl-col-sm-12{
         width: 100%;
+    }
+    /*page 1*/
+    .nl-text-at-bt__p1{
+      line-height: 24px;
+      width: 40%;
+    }
+    .nl-text-at-bt__p2{
+      line-height: 24px;
+      width: 60%;
+    }
+    
+    .nl-text-at-bt__p1 span,.nl-text-at-bt__p2 span, .nl-text-at-bt__p2 a{
+      display: block;
+      line-height: 32px;
+    }
+    .nl-text-at-bt__p1 .nl-text-1{
+      font-weight: 600;
+      font-size: 1rem;
+      padding-left: 20px;
+    }
+    .nl-text-at-bt__p1 .nl-text-2{
+      font-size: 1.125rem;
+      font-weight: 600;
+      padding-left: 20px;
+    }
+    .nl-text-at-bt__p2 .nl-text-3{
+      font-size: 1.125rem;
+      font-weight: 800;
+      text-align: right;
+      padding-right: 20px;
+    }
+    .nl-text-at-bt__p2 .nl-text-4{
+      font-size: 1.25rem;
+      font-weight: 800;
+      text-align: right;
+      padding-right: 20px;
     }
 }
 @media (max-width: 975px){
@@ -645,9 +645,19 @@ ul li{
     padding-left: 0;
     padding-right: 0;
   }
-  /* .nl-row-3-ship-frm .nl-col3{
-    margin-top: 20px;
-  } */
+  .nl-row-3-ship-frm .nl-row .nl-col1, .nl-row-3-ship-frm .nl-row .nl-col2{
+    width: 20%;
+    max-width: 64px;
+  }
+  .nl-row-3-ship-frm .nl-col3{
+    width: 60%;
+    max-width: 157px;
+  }
+
+  .nl-row-3-ship-frm .nl-col3-line2 input{
+    width: 48%;
+    max-width: 64px;
+  }
   .nl-row-3-ship-frm .nl-col3-line2 input:first-child{
     margin-left: 8px;
   }
@@ -658,59 +668,18 @@ ul li{
   .nl-row3-p1 .nl-col-2{
     width: 50%;
   }
-
-  .nl-ctn-at-bt-p1{
-    height: auto;
-    padding: 15px 0;
-  }
-  .nl-bt-left-part-p1{
-    width: 45%;
-  }
-  .nl-ctn-at-bt p.nl-bt-left-part-p1 span:nth-child(2){
-    margin-left: 0;
-  }
-  .nl-bt-right-part-p1 .nl-2{
-    padding-right: 20px !important;
-  }
-  .nl-bt-left-part-p1 span:first-child{
-    margin-bottom: 10px;
-  }
-  .nl-bt-right-part-p1{
-    flex-direction: column;
-    text-align: right;
-  }
-  .nl-bt-right-part-p1 .nl-1{
-    width: 100%;
-    padding-right: 20px;
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
   .nl-ul-list-p2 .nl-li-list{
     padding: 20px 20px 5px;
   }
   .nl-bottom-total-price__p2{
     height: auto;
-    padding-top: 10px;
     flex-wrap: wrap;
   }
   .nl-bottom-total-price__p2 .nl-col__p2{
     width: 100%;
-    margin-bottom: 10px;
     margin-right: 0;
     text-align: center;
-    font-weight: 700;
-  }
-  .nl-ctn-at-bt-p2{
-    height: auto;
-    flex-direction: column;
-    padding: 15px 0;
-  }
-  .nl-ctn-at-bt-p2 span{
-    padding: 0 30px;
-    margin-bottom: 10px;
-  }
-  .nl-ctn-at-bt-p2 span:nth-child(2){
-    margin-bottom: 0;
+    font-weight: 800;
   }
 
   .nl-li-list__p3 .nl-bor-left{
