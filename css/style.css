@@ -1833,14 +1833,15 @@ a{
 }
 
 .nvn-col-md-3 .actions .action-item p{
-  padding-left: 5px;
-  font-size: 16px;
-  width: calc(100% - 45px);
-  font-weight: 600;
+  padding-left: 8px;
+    font-size: 14px;
+    width: calc(100% - 45px);
+    font-weight: 800;
 }
 .nvn-col-md-3 .actions .action-item p span{
   font-weight: 800;
   font-size: 18px;
+  display: block;
 }
 @media (min-width: 768px){
   .nvn-mt-136{
