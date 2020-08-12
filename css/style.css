@@ -379,9 +379,9 @@ ul li{
     justify-content: flex-end;
     border-bottom-left-radius: 29px;
     border-bottom-right-radius: 29px;
-    padding: 20px 0;
-    background-color: #fff;
+    background-color: #f2f2f2;
     min-height: 51px;
+    color: #000699;
 }
 /* .nl-bottom-total-price>span{
     display: inline-block;
@@ -409,9 +409,22 @@ ul li{
     margin: auto;
 }
 .nl-ul-has-list-style li{
-    list-style-type: disc;
-    list-style-position: inside;
+    position: relative;
     line-height: 24px;
+    padding-left: 12px;
+    font-weight: 600;
+}
+
+.nl-ul-has-list-style li::after{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 100%;
+    top: 13px;
+    left: 0;
+    transform: translateY(-50%);
 }
 .nl-date-picker-p2{
     font-weight: 600;
@@ -475,7 +488,7 @@ ul li{
     position: relative;
     line-height: 24px;
     padding-left: 12px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .nl-ul-col-1-p3 li::after{
     position: absolute;
@@ -484,7 +497,7 @@ ul li{
     height: 5px;
     background-color: #000;
     border-radius: 100%;
-    top: 50%;
+    top: 13px;
     left: 0;
     transform: translateY(-50%);
 }
@@ -604,6 +617,9 @@ ul li{
   padding-bottom: 10px;
 }
 @media (min-width: 768px){
+    .nl-bottom-total-price{
+      padding: 0;
+    }
     .nl-col-md-8{
         width: 66.6666%;
     }
@@ -612,6 +628,7 @@ ul li{
     }
     .nl-text-at-bt__p1 span, .nl-text-at-bt__p2 span, .nl-text-at-bt__p2 a{
       display: inline-block !important;
+      margin-bottom: 0 !important;
     }
     .nl-text-at-bt__p2{
       text-align: right;
@@ -626,8 +643,14 @@ ul li{
     .nl-span-at-bt__p2{
       padding-right: 50px !important;
     }
+    .nl-bottom-total-price{
+      padding: 0 !important ;
+    }
 }
 @media (min-width: 320px){
+    .nl-bottom-total-price{
+      padding: 14px 0;
+    }
     .nl-col-sm-12{
         width: 100%;
     }
@@ -643,7 +666,7 @@ ul li{
     
     .nl-text-at-bt__p1 span,.nl-text-at-bt__p2 span, .nl-text-at-bt__p2 a{
       display: block;
-      line-height: 32px;
+      margin-bottom: 10px;
     }
     .nl-text-at-bt__p1 .nl-text-1{
       font-weight: 600;
@@ -660,7 +683,10 @@ ul li{
       font-size: 1.125rem;
       font-weight: 800;
       text-align: right;
-      padding-right: 20px;
+      margin-right: 20px;
+      color: #000699;
+      text-decoration: none;
+      border-bottom: 2px solid #000699;
     }
     .nl-text-at-bt__p2 .nl-text-4{
       font-size: 1.25rem;
