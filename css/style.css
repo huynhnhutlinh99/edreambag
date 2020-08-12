@@ -1121,7 +1121,8 @@ ul li{
     padding-bottom: 25px;
   }
   .nvn-content-left .form .nvn-bt p {
-    margin-bottom: 2px;
+    margin-bottom: 6px;
+    font-size: 15px;
   
   }
   
@@ -1469,11 +1470,13 @@ ul li{
     margin: 31px 0px;
 }
 .nvn-page5 .nvn-bt p{
-   margin-top: 2px;
+  margin-bottom: 6px;
+  font-size: 15px;
 }
 .nvn-page5 .bt-title{
     margin-bottom: 9px;
 }
+
 .nvn-page5 .nvn-content-right .gutter{
     height: 495px;
 }
@@ -1565,12 +1568,12 @@ ul li{
 }
 .form-title h3{
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .modal .form-group label{
   display: block;
   text-align: left;
-  margin: 30px 15px 10px;
+  margin: 30px 25px 10px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -1582,6 +1585,10 @@ ul li{
   padding: 0px 14px 0;
   font-size: 16px;
   outline: none;
+  font-weight: 500;
+}
+.modal .form-group input::placeholder{
+  color: #cccccc;
 }
 .modal #remember{
   display: none;
@@ -1646,10 +1653,13 @@ height: 40px;
 }
 
 .dont-have{
+ 
   font-size: 16px;
   font-weight: 500;
-  margin-top: 26px;
+  margin-top: 23px;
   margin-bottom: 29px;
+  margin-left: 10px;
+
 }
 a{
   margin-left: 5px;
@@ -1685,7 +1695,7 @@ a{
 .half.modal .form-group label{
   display: block;
   text-align: left;
-  margin: 36px 15px 10px;
+  margin: 36px 25px 10px;
   font-size: 18px;
 }
 .nvn-content-right_content a{
