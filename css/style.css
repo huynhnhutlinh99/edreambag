@@ -177,7 +177,7 @@ ul li{
     transform: rotate(-45deg);
 }
 .nl-tile-line-1{
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 .nl-tile-line-1>h2{
     font-size: 1.125rem;
@@ -729,7 +729,8 @@ ul li{
     text-align: center;
     font-weight: 800;
   }
-  .nl-li-list__p3 .nl-col-items-box{
+  .nl-li-list__p3 .nl-col-items-box,
+  .nl-ul-list-p2 .nl-col-items-box{
     max-height: 110px;
   }
   .nl-li-list__p3 .nl-bor-left{
