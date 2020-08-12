@@ -152,6 +152,7 @@ ul li{
     margin: auto;
 }
 .nl-btn-sm-p1{
+    font-weight: 600;
     margin-left: 20px;
     padding: 5px 10px 7px;
     border-radius: 30px;
@@ -292,6 +293,7 @@ ul li{
     padding: 0 5px;
 }
 .nl-btn-plus-inch{
+    font-weight: 600;
     width: 100px;
     height: 26px;
     border: 0;
@@ -378,6 +380,7 @@ ul li{
     border-bottom-right-radius: 29px;
     padding: 20px 0;
     background-color: #fff;
+    min-height: 51px;
 }
 /* .nl-bottom-total-price>span{
     display: inline-block;
