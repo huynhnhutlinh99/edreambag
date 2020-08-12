@@ -1,21 +1,30 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 @font-face{
     font-family: NanumGothic;
-    src: url(/fonts/NanumGothic-Regular.ttf);
+    src: url(../fonts/NanumGothic-Regular.ttf);
+    font-weight: 400;
 }
-
+@font-face{
+  font-family: NanumGothic;
+  src: url(../fonts/NanumGothic-Bold.ttf);
+  font-weight: 700;
+}
+@font-face{
+  font-family: NanumGothic;
+  src: url(../fonts/NanumGothic-ExtraBold.ttf);
+  font-weight: 800;
+}
 html, body{
     font-family: NanumGothic, sans-serif;
+    font-weight: 400;
 }
 ul li{
     list-style: none;
 }
-
-
 .nl-max{
     width: 100%;
 }
@@ -62,52 +71,59 @@ ul li{
 }
 .nl-page-wrapper .contain{
     background-color: #fff;
-    padding: 0 15px;
+    padding: 0 9px;
 }
 
 .nl-pad-rl-20 {
     padding-left: 20px;
     padding-right: 20px;
 }
-
+/* page1 */
 .nl-p1-sel{
-    height: 30px;
+    height: 51px;
     border-radius: 0;
     border: 1px solid #000;
     background-color: #fff;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
 }
 .nl-p1-sel>p{
     position: relative;
     height: 100%;
-    min-width: 96px;
+    min-width: 106px;
     display: inline-block;
-    line-height: 28px;
-    padding-left: 18px;
+    line-height: 50px;
+    padding-left: 38px;
+    font-weight: 700;
+    color: #6a6a6a;
+    font-size: 20px;
 }
 .nl-p1-sel>p::after{
     position: absolute;
     content: "";
     border-style: solid;
-    border-width: 6px;
+    border-width: 8px;
     border-color:  transparent transparent #000 transparent;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    margin-top: -5px;
+    margin-top: -2px;
 }
 .nl-row{
     display: flex;
     flex-wrap: wrap;
 }
 .nl-row-p1{
-    margin-top: 30px;
+    margin: 29px 0;
     border: 1px solid #000;
+    border-radius: 30px;
+    border-radius: 30px;
 }
 
 .nl-ul-list .nl-li-list{
     border: 1px solid #494949;
     border-radius: 10px;
-    padding: 40px 0;
+    padding: 40px 20px;
     background-color: #fff;
     margin: 10px;
 }
@@ -136,7 +152,6 @@ ul li{
     margin: auto;
 }
 .nl-btn-sm-p1{
-    font-weight: 800;
     margin-left: 20px;
     padding: 5px 10px 7px;
     border-radius: 30px;
@@ -164,18 +179,20 @@ ul li{
     margin-bottom: 15px;
 }
 .nl-tile-line-1>h2{
-    font-size: 24px;
+    font-size: 1.125rem;
     margin-left: 20px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 33px;
 }
 .nl-frm-p1{
     padding: 5px 22px;
     border-radius: 30px;
     border: 1px solid #c4c4c4;
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .nl-frm-p1 span{
     padding-bottom: 2px;
@@ -183,7 +200,7 @@ ul li{
 .nl-sel-num{
     height: 26px;
     width: 45px;
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 20px;
     font-weight: bold;
     border-radius: 5px;
@@ -210,53 +227,27 @@ ul li{
 .nl-row3-p1 div p{
     padding: 8px 0;
 }
+.nl-row3-p1 div p:last-child{
+  padding-bottom: 0;
+}
 .nl-text-3{
     font-size: 1.25rem;
-    font-weight: 800;
-}
-.nl-text-2{
-  font-size: 1rem;
-  font-weight: 800;
-}
-.nl-text-1{
-  font-size: 1rem;
-  font-weight: 800;
+    font-weight: 900;
 }
 
 .nl-row-detail{
-    position: relative;
     width: 36%;
+    font-weight: 700;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nl-row-total-price{
+    width: 34%;
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
-    min-height: 180px;
-}
-.nl-row-detail::after{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 180px;
-  border-left: 1px solid #c4c4c4;
-  left: 0;
-  top: 0;
-}
-.nl-row-detail::before{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 180px;
-  border-left: 1px solid #c4c4c4;
-  right: 0;
-  top: 0;
-}
-.nl-shipping__col{
-  align-items: center;
-}
-.nl-row-total-price{
-    width: 32%;
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 32px;
 }
 .nl-row-3-ship-frm{
     width: 100%;
@@ -265,9 +256,6 @@ ul li{
     display: block;
     height: 26px;
     margin-bottom: 4px;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 30px;
 }
 .nl-row-3-ship-frm .nl-row input{
     display: inline-block;
@@ -280,12 +268,10 @@ ul li{
     border-radius: 15px;
     background-color: #dfdfdf;
     margin-bottom: 4px;
-    font-weight: 600;
-    font-size: 1rem;
 }
 .nl-row-3-ship-frm  .nl-row .nl-col1{
-    width: 64px;
-    padding-right: 10px;
+    width: 62px;
+    padding-right: 8px;
 }
 .nl-row-3-ship-frm  .nl-row .nl-col1 input,
 .nl-row-3-ship-frm  .nl-row .nl-col2 input{
@@ -302,6 +288,7 @@ ul li{
 .nl-row-3-ship-frm .nl-col3{
     width: 157px;
 }
+
 .nl-row-3-ship-frm .nl-col3-line1{
     text-align: right;
 }
@@ -345,18 +332,15 @@ ul li{
     padding: 15px 10px;
 }
 .nl-ctn-total-price .nl-p-line-1{
-    font-weight: 600;
-    margin: 5px 0 16px;
+    font-weight: 400;
+    margin: 5px 5px 32px;
 }
 .color-blue{
     color: #000699;
 }
 .nl-bottom-total-price{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    height: 40px;
-    text-align: right;
     border: 1px solid #000;
     align-items: center;
     justify-content: flex-end;
@@ -364,52 +348,13 @@ ul li{
     border-bottom-right-radius: 29px;
     padding: 20px 0;
     background-color: #fff;
-    min-height: 51px;
 }
-.nl-bottom-total-price>span{
+/* .nl-bottom-total-price>span{
     display: inline-block;
     font-weight: 700;
     margin-right: 48px;
-}
-.nl-ctn-at-bt{
-    width: 100%;
-    height: 58px;
-    background-color: #494949;
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.nl-ctn-at-bt span,
-.nl-ctn-at-bt a{
-    color: #fff;
-    display: inline-block;
-}
-.nl-ctn-at-bt span{
-    font-weight: 700;
-}
-.nl-ctn-at-bt .nl-cell{
-    width: 33.3333%;
-}
-.nl-ctn-at-bt .nl-cell:nth-child(1){
-    padding-left: 30px;
-}
-.nl-ctn-at-bt .nl-cell:nth-child(2){
-   text-align: center;
-}
-.nl-ctn-at-bt .nl-cell:nth-child(3){
-    text-align: right;
-    padding-right: 30px;
-}
-.nl-ctn-at-bt p span:nth-child(1){
-    font-size: 14px;
-    font-weight: 400;
- }
-.nl-ctn-at-bt p span:nth-child(2){
-   margin-left: 25px;
-}
-
+    font-size: 1.065rem;
+} */
 
 /*page2*/
 .nl-tt-has-circle{
@@ -441,7 +386,6 @@ ul li{
     background-color: #f2f2f2;
     border: 1px solid #c4c4c4;
     padding: 0 20px;
-    font-weight: 600;
 }
 .nl-ctn-coln{
     position: relative;
@@ -468,20 +412,11 @@ ul li{
 .nl-text-right{
     text-align: right;
 }
-.nl-ctn-at-bt-p2 {
-    width: 100%;
-    height: 58px;
-    background-color: #494949;
-    margin-top: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-weight: 700;
-    color: #fff;
-}
-.nl-ctn-at-bt-p2 span{
-    display: inline-block;
-    padding-right: 48px;
+.nl-bottom-total-price__p2 .nl-col__p2{
+  padding: 0 20px;
+  text-align: right;
+  line-height: 32px;
+  font-weight: 800;
 }
 
 /*page 3*/
@@ -492,10 +427,10 @@ ul li{
     width: 70%;
 }
 .nl-p-col-1-p3{
-    font-weight: 700;
+    font-weight: 400;
     padding-left: 21px;
     margin-bottom: 6px;
-    font-size: 17px;
+    font-size: 1,065rem;
 }
 .nl-ul-col-1-p3{
     margin-top: 10px;
@@ -505,6 +440,7 @@ ul li{
     position: relative;
     line-height: 24px;
     padding-left: 12px;
+    font-weight: 300;
 }
 .nl-ul-col-1-p3 li::after{
     position: absolute;
@@ -611,6 +547,7 @@ ul li{
     padding-right: 6px;
     
 }
+
 .nl-p-line-1-row-p3{
     font-size: 17px;
     font-weight: bold;
@@ -618,8 +555,18 @@ ul li{
 }
 
 .nl-ctn-row2-p3 .nl-ul-col-1-p3{
-    padding-left: 12px;
+    padding-left: 0;
     margin-top: 20px;
+}
+
+.nl-span-at-bt__p2{
+  padding-right: 50px;
+  font-weight: 800;
+  line-height: 32px;
+  font-size: 1.125rem;
+}
+.nl-ul-list .nl-li-list__p3 .nl-ctn-row2-p3{
+  padding-bottom: 10px;
 }
 @media (min-width: 768px){
     .nl-col-md-8{
@@ -627,6 +574,22 @@ ul li{
     }
     .nl-col-md-4{
         width: 33.3333%;
+    }
+    .nl-text-at-bt__p1 span, .nl-text-at-bt__p2 span, .nl-text-at-bt__p2 a{
+      display: inline-block !important;
+    }
+    .nl-text-at-bt__p2{
+      text-align: right;
+    }
+    .nl-text-at-bt__p1 .nl-text-1{
+      padding-left: 50px !important;
+    }
+    .nl-text-at-bt__p2 .nl-text-4{
+      padding-right: 50px !important;
+    }
+    /*page 3*/
+    .nl-span-at-bt__p2{
+      padding-right: 50px !important;
     }
 }
 @media (min-width: 320px){
@@ -654,7 +617,7 @@ ul li{
     }
     .nl-text-at-bt__p1 .nl-text-2{
       font-size: 1.125rem;
-      font-weight: 800;
+      font-weight: 600;
       padding-left: 20px;
     }
     /*page1_0*/
@@ -677,81 +640,65 @@ ul li{
     }
 }
 @media (max-width: 975px){
+  body, html{
+    font-size: 14px;
+  }
   .nl-li-list>div{
     width: 100%;
     padding-bottom: 20px;
     
   }
   .nl-li-list>div:nth-child(1){
-    margin-bottom: 20px;
-    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 20px; 
   }
-  .nl-li-list>div:nth-child(2){
-    margin-bottom: 20px;
-    border-bottom: 1px solid #c4c4c4;
+  .nl-li-list>div:nth-child(1) .nl-items-box{
+    max-height: 100px;
   }
-
-  .nl-row-detail::after,
-  .nl-row-detail::before{
-    border: 0 !important;
+  .nl-row-detail{
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .nl-row-total-price{
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .nl-row-3-ship-frm .nl-row .nl-col1, .nl-row-3-ship-frm .nl-row .nl-col2{
     width: 20%;
     max-width: 64px;
   }
   .nl-row-3-ship-frm .nl-col3{
-    margin-top: 20px;
-  }
-  .nl-row-3-ship-frm .nl-col3-line2 input:first-child{
-    margin-left: 0;
-  }
-  .nl-row3-p1 .nl-col-1{
-    width: 100%;
-    text-align: center;
-  }
-  .nl-col-1 .nl-img-down{
-    position: relative;
-    display: inline-block;
-  }
-  .nl-ctn-at-bt-p1{
-    height: auto;
-  }
-  .nl-ctn-at-bt-p1 .nl-cell:nth-child(1){
-    width: 100%;
-    text-align: right;
-    padding: 20px 20px 5px;
-  }
-  .nl-ctn-at-bt .nl-cell:nth-child(2) {
-    width: 100%;
-    text-align: right;
-    padding: 5px 20px;
-  }
-  .nl-ctn-at-bt .nl-cell:nth-child(3){
-    padding: 5px 20px 20px;
-    width: 100%;
-    text-align: right;
+    width: 60%;
+    max-width: 157px;
   }
 
-  .nl-bottom-total-price__p2{
-    height: auto;
+  .nl-row-3-ship-frm .nl-col3-line2 input{
+    width: 48%;
+    max-width: 64px;
+  }
+  .nl-row-3-ship-frm .nl-col3-line2 input:first-child{
+    margin-left: 8px;
+  }
+  .nl-row3-p1 .nl-col-1{
+    width: 50%;
+    text-align: center;
+  }
+  .nl-row3-p1 .nl-col-2{
+    width: 50%;
+  }
+  .nl-ul-list-p2 .nl-li-list{
+    padding: 20px 20px 5px;
   }
   .nl-bottom-total-price__p2{
-    padding-top: 10px;
+    height: auto;
+    flex-wrap: wrap;
   }
   .nl-bottom-total-price__p2 .nl-col__p2{
     width: 100%;
-    margin-bottom: 10px;
-    margin-right: 20px;
-  }
-  .nl-ctn-at-bt-p2 span{
-    padding: 0 30px;
-  }
-  .nl-ctn-at-bt-p2 span:nth-child(2){
-    text-align: right;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 800;
   }
 
   .nl-li-list__p3 .nl-bor-left{
@@ -785,6 +732,7 @@ ul li{
     padding: 0;
     font-size: 13px;
   }
+
 }
 
 .flex{
@@ -807,8 +755,9 @@ ul li{
 /* Nhat */
 .nvn-bottom{
     width: 100%;
-    height: 40px;
+    height: auto;
     border: 1px solid #000;
+    line-height: 32px; /*linh edit*/
 }
 .nvn-row {
     display: -webkit-box;
@@ -904,7 +853,8 @@ ul li{
       width: 16.66667%;
     }
     .nvn-row .nvn-col-md-3 {
-      width: 25%;
+      padding-left: 38px;
+      width: 244px
     }
     .nvn-row .nvn-col-md-4 {
       width: 33.33333%;
@@ -1031,13 +981,13 @@ ul li{
   
   @media only screen and (min-width: 320px) {
     .nvn-content {
-      margin: 0;
+        padding: 0;
     }
   }
   
   @media only screen and (min-width: 768px) {
     .nvn-content {
-      margin-right: 20px;
+      padding-right: 20px;
     }
   }
   
@@ -1047,24 +997,30 @@ ul li{
   }
   
   @media only screen and (min-width: 320px) {
-    .nvn-content-left .form-group {
-      padding-left: 25px;
+    .nvn-content-left .form .form-group {
+      padding: 0 15px;
+    }
+    .nvn-content-left .form-group_item input{
+        width: 65%;
     }
   }
   
   @media only screen and (min-width: 768px) {
-    .nvn-content-left .form-group {
+    .nvn-content-left .form .form-group {
       padding: 0 50px 0 25px;
     }
+    .nvn-content-left .form-group_item input{
+        width: 100%;
+    }
   }
-  
+ 
   .nvn-content-left .form-group_item {
     padding-right: 25px;
   }
   
   .nvn-content-left .form-group_item label {
     display: block;
-    margin: 22px 0px 7px 20px;
+    margin: 22px 0px 9px 20px;
     font-size: 18px;
     font-weight: 600;
   }
@@ -1075,11 +1031,11 @@ ul li{
   }
   
   .nvn-content-left .form-group .line {
-    border-bottom: 1px solid #494949;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-left .form-group .bt-title {
-    padding: 20px 0 10px;
+    padding: 20px 0 18px;
     font-size: 22px;
   }
   
@@ -1094,13 +1050,14 @@ ul li{
       padding-right: 50px;
     }
   }
-  
-  .nvn-content-left .form .nvn-bt {
-    margin-bottom: 50px;
+ 
+  .nvn-content-left .form .nvn-bt{
+
+    padding-bottom: 25px;
   }
-  
   .nvn-content-left .form .nvn-bt p {
     margin-bottom: 2px;
+  
   }
   
   .nvn-content-left .form-action {
@@ -1120,7 +1077,7 @@ ul li{
   }
   
   .nvn-content-left .form-action_item {
-    padding-top: 25px;
+    padding-top: 35px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1142,13 +1099,22 @@ ul li{
   .nvn-content-left .form-action_item span {
     padding-left: 10px;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 25px;
     width: calc(100% - 20px);
+    margin-top: -6px;
   }
   
-  .nvn-content-right {
-    margin: 20px 0 60px;
-    padding: 0 20px;
+
+  @media only screen and (min-width:320px){
+    .nvn-content-right {
+        margin: 20px 0 0;
+        padding: 0 10px;
+      }
+  }  @media only screen and (min-width:768px){
+    .nvn-content-right {
+        margin: 20px 0 0;
+        padding: 0;
+      }
   }
   
   .nvn-content-right .gutter {
@@ -1156,9 +1122,20 @@ ul li{
     border-radius: 25px;
     padding: 20px;
     background-color: white;
-    height: 628px;
+    height: 530px;
   }
   
+
+  @media only screen and (min-width:320px){
+    .nvn-page5 .nvn-content-right .gutter.height-535 {
+        height: auto;
+      }
+  }  @media only screen and (min-width:768px){
+    .nvn-page5 .nvn-content-right .gutter.height-535 {
+        height: 535px;
+      }
+  }
+
   .nvn-content-right .bold {
     font-weight: bold;
   }
@@ -1170,15 +1147,17 @@ ul li{
   
   .nvn-content-right .title h3 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 800;
   }
   
   .nvn-content-right .title a {
     color: #000;
+    font-weight: bold;
+    font-size: 15px;
   }
   
-  .pt-12{
-    padding-top: 12px;
+  .pt-14{
+    padding-top: 14px;
   }
   .nvn-content-right .option {
     padding: 10px 15px;
@@ -1187,7 +1166,7 @@ ul li{
   
   .nvn-content-right .option h4.it-title {
     margin-top: 12px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 17px;
   }
   
@@ -1200,7 +1179,7 @@ ul li{
   }
   
   .nvn-content-right .option .size {
-    margin-top: 23px;
+    margin-top: 30px;
   }
   .pt-9{
     padding-top: 9px;
@@ -1211,7 +1190,7 @@ ul li{
   .nvn-content-right .option .total {
     margin-top: 38px;
     padding: 10px 0 21px;
-    border-bottom: 1px solid #494949;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-right .option .total p {
@@ -1250,12 +1229,35 @@ ul li{
     .nvn-content-right .nvn-btn {
       width: 75%;
     }
+    .btn-responsive{
+        position: absolute;
+        bottom: 29px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pd-80{
+        position: relative;
+        padding-bottom: 80px !important;
+       
+    }
   }
   
   @media only screen and (min-width: 768px) {
     .nvn-content-right .nvn-btn {
       width: 400px;
     }
+    .btn-responsive{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        transform: none;
+    }
+    .pd-80{
+        position: relative;
+        padding-bottom: 10px !important;
+       
+    }
+   
   }
   
   .nl-ctn-at-bt.nvn-footer {
@@ -1279,6 +1281,8 @@ ul li{
       width: 100%;
       font-size: 14px;
       margin-right: 0;
+      font-weight: 600;
+      background-color: #fff; /*linh edit*/
     }
   }
   
@@ -1297,12 +1301,15 @@ ul li{
 /* Nhat */
 .nvn-title{
     font-size: 23px;
-    font-weight: bold;
+    font-weight: 800;
     padding: 20px 0 30px;
 }
 .nvn-header{
     height: 50px;
     border-width: 2px 2px 1px 2px; /*linh edit*/
+}
+.nvn-header p{
+  font-size: 23px;font-weight: bold; color: #494949;
 }
 .nvn .contain .bg-grey{
     background: transparent;
@@ -1365,9 +1372,18 @@ ul li{
 .pt-13{
     padding-top: 13px;
 }
+.total .nvn-total{
+  font-weight: 800;
+}
 .nvn-page5  .nvn-content-right .option .total{
     margin-top: 5px;
     border: none;
+}
+.option-item_price{
+  font-weight: bold;
+}
+.option-item_name{
+  font-weight: bold;
 }
 .nvn-page5  .nvn-content-right .option .line{
     margin-left: -15px;
@@ -1392,7 +1408,9 @@ ul li{
 .nvn-page5 .nvn-content-right .gutter{
     height: 495px;
 }
-
+.pt-12{
+  padding-top: 12px;
+}
 .nvn-page5 .nvn-btn {
     border-radius: 9999px;
     border: none;
@@ -1419,13 +1437,13 @@ ul li{
     }
   }
   .nvn .nvn-bottom{
-      min-height: 50px;
-      border-width: 1px 2px 2px;
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-      padding: 20px 0;
-      font-size: 1.125rem;
-      font-weight: 600;
+    min-height: 50px;
+    border-width: 1px 2px 2px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px 0;
+    font-size: 1.125rem;
+    font-weight: 600;
   }
   .nvn .nvn-footer{
     margin: 10px 0 0;
@@ -1475,8 +1493,9 @@ ul li{
 .modal .form-group label{
   display: block;
   text-align: left;
-  margin: 30px 15px 9px;
+  margin: 30px 15px 10px;
   font-size: 18px;
+  font-weight: bold;
 }
 .modal .form-group input{
   width: 100%;
@@ -1567,27 +1586,29 @@ a{
 }
 .half .form .nvn-row .nvn-col-xs-6{
   padding:0 12px;
+  margin-top: -2px;
+}.half .form .nvn-row .nvn-col-xs-6 
+.half .form  .form-group label{
+  /* margin-top: 10px; */
 }
-/* .half .form  .form-group label{
-  margin-top: 10px;
-} */
 .half .form .form-group.form-action input{
   width: 20px;height:20px;
   border: 1px solid #9a9a9a;
 }
 .half .form .form-group.form-action span{
   width: calc(100% - 30px);
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 24px;
   font-weight: 500;
   text-align: left;
   padding-left: 13px;
+  margin-top: -6px;
 }
 
 .half.modal .form-group label{
   display: block;
   text-align: left;
-  margin: 36px 15px 8px;
+  margin: 36px 15px 10px;
   font-size: 18px;
 }
 .nvn-content-right_content a{
@@ -1689,17 +1710,26 @@ a{
   .ship .ship-item{
     margin: 63px auto;
   }
+  .forget-password{
+    margin-top: 25px;
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (min-width:768px){
   .ship .ship-item{
     margin: 5px 0;
   }
+  .forget-password{
+    margin-top: 25px;
+    padding-right: 66px;
+  }
 }
 .ship .ship-item .text{
   padding-left: 150px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
+
 }
 .ship .ship-item p{
   color: #DF0A15;
@@ -1729,21 +1759,22 @@ a{
     padding: 0 0 30px 75px;
   }
 }
-/* .container{
-  padding-left: 40px;
-} */
+.container{
+  /* padding-left: 40px; */
+}
 .nvn .content h3{
   color: #DF0A15;
     font-size: 23px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .nvn .content .des{
-  margin: 13px 0 16px;
-  font-weight: bold;
+  margin: 18px 0 20px;
+    font-weight: 800;
 }
 .nvn .content .txt{
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 21px;
 }
 
 @media only screen and (min-width:320px){
@@ -1773,7 +1804,8 @@ a{
   margin: 22px 0 44px;
   font-size: 16px;
   text-align: center;
-  width: 150px
+  width: 150px;
+  border: 1px solid #000;
 }
 
 
@@ -1789,7 +1821,8 @@ a{
     padding: 0 30px;
   }
 }
-
+.nvn .content-item .gutter{
+}
 .nvn-col-md-3 .actions{
   margin: 30px 0 0 5px;
 }
@@ -1821,13 +1854,15 @@ a{
 }
 
 .nvn-col-md-3 .actions .action-item p{
-  padding-left: 5px;
-  font-size: 16px;
-  width: calc(100% - 45px);
+  padding-left: 8px;
+    font-size: 14px;
+    width: calc(100% - 45px);
+    font-weight: 800;
 }
 .nvn-col-md-3 .actions .action-item p span{
   font-weight: 800;
   font-size: 18px;
+  display: block;
 }
 @media (min-width: 768px){
   .nvn-mt-136{
@@ -1889,7 +1924,6 @@ a{
   position: relative;
   width: 100%;
   border: 1px solid #777;
-  font-weight: 800;
 }
 .nl-list-user-nav li{
   height: 51px;
