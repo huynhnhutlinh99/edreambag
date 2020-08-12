@@ -185,6 +185,7 @@ ul li{
     line-height: 33px;
 }
 .nl-frm-p1{
+  font-weight: 800;
     padding: 5px 22px;
     border-radius: 30px;
     border: 1px solid #c4c4c4;
