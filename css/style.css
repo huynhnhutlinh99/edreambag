@@ -651,6 +651,9 @@ ul li{
     .nl-bottom-total-price{
       padding: 14px 0;
     }
+    .nl-bottom-total-price.nl-bottom-total-price__p3{
+      padding: 0;
+    }
     .nl-col-sm-12{
         width: 100%;
     }
