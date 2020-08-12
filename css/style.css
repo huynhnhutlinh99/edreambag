@@ -729,7 +729,9 @@ ul li{
     text-align: center;
     font-weight: 800;
   }
-
+  .nl-li-list__p3 .nl-col-items-box{
+    max-height: 110px;
+  }
   .nl-li-list__p3 .nl-bor-left{
     border-left: 0;
   }
@@ -1953,6 +1955,7 @@ a{
   position: relative;
   width: 100%;
   border: 1px solid #777;
+  font-weight: 800;
 }
 .nl-list-user-nav li{
   height: 51px;
