@@ -822,7 +822,7 @@ ul li{
     width: 100%;
     height: auto;
     border: 1px solid #000;
-    line-height: 32px; /*linh edit*/
+    line-height: 24px; /*linh edit*/
 }
 .nvn-row {
     display: -webkit-box;
@@ -1347,7 +1347,6 @@ ul li{
       font-size: 14px;
       margin-right: 0;
       font-weight: 600;
-      background-color: #fff; /*linh edit*/
     }
   }
   
@@ -1495,20 +1494,28 @@ ul li{
     .nvn-border .nvn-btn {
       width: 75%;
     }
+    .nvn .nvn-bottom{
+      padding: 20px 0;
+    }
   }
   @media only screen and (min-width: 768px) {
     .nvn-border .nvn-btn {
         width: 249px;
     }
+    .nvn .nvn-bottom{
+      padding: 0;
+    }
   }
   .nvn .nvn-bottom{
-    min-height: 50px;
     border-width: 1px 2px 2px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding: 20px 0;
     font-size: 1.125rem;
     font-weight: 600;
+    background-color: #f2f2f2;
+    min-height: 51px;
+    color: #000699;
+    
   }
   .nvn .nvn-footer{
     margin: 10px 0 0;
