@@ -1709,7 +1709,8 @@ a{
 .ship .ship-item .text{
   padding-left: 150px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
+
 }
 .ship .ship-item p{
   color: #DF0A15;
@@ -1749,11 +1750,12 @@ a{
 }
 
 .nvn .content .des{
-  margin: 13px 0 16px;
-  font-weight: 800;
+  margin: 18px 0 20px;
+    font-weight: 800;
 }
 .nvn .content .txt{
   font-weight: 600;
+  line-height: 21px;
 }
 
 @media only screen and (min-width:320px){
