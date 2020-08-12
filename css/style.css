@@ -681,11 +681,8 @@ ul li{
     padding-bottom: 20px;
     
   }
-  .nl-li-list>div:nth-child(1){
-    margin-bottom: 20px; 
-  }
   .nl-li-list>div:nth-child(1) .nl-items-box{
-    max-height: 100px;
+    max-height: 160px;
   }
   .nl-row-detail::after,
   .nl-row-detail::before{
