@@ -1404,6 +1404,11 @@ ul li{
     padding-bottom: 29px;
     border: 1px solid #494949;
 }
+.nvn-page5.nvn-border, 
+.nl-fix-border__p4.nvn-border{
+  border-top: 0;
+  border-bottom: 0;
+}
 .nvn-page5 .nvn-content-right{
     background-color: #fff;
     width: 100%;
