@@ -1020,7 +1020,7 @@ ul li{
   
   .nvn-content-left .form-group_item label {
     display: block;
-    margin: 22px 0px 7px 20px;
+    margin: 22px 0px 9px 20px;
     font-size: 18px;
     font-weight: 600;
   }
@@ -1031,11 +1031,11 @@ ul li{
   }
   
   .nvn-content-left .form-group .line {
-    border-bottom: 1px solid #494949;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-left .form-group .bt-title {
-    padding: 20px 0 10px;
+    padding: 20px 0 18px;
     font-size: 22px;
   }
   
@@ -1099,8 +1099,9 @@ ul li{
   .nvn-content-left .form-action_item span {
     padding-left: 10px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 25px;
     width: calc(100% - 20px);
+    margin-top: -6px;
   }
   
 
@@ -1112,7 +1113,7 @@ ul li{
   }  @media only screen and (min-width:768px){
     .nvn-content-right {
         margin: 20px 0 0;
-        padding: 0 20px;
+        padding: 0;
       }
   }
   
@@ -1146,15 +1147,17 @@ ul li{
   
   .nvn-content-right .title h3 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 800;
   }
   
   .nvn-content-right .title a {
     color: #000;
+    font-weight: bold;
+    font-size: 15px;
   }
   
-  .pt-12{
-    padding-top: 12px;
+  .pt-14{
+    padding-top: 14px;
   }
   .nvn-content-right .option {
     padding: 10px 15px;
@@ -1163,7 +1166,7 @@ ul li{
   
   .nvn-content-right .option h4.it-title {
     margin-top: 12px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 17px;
   }
   
@@ -1176,7 +1179,7 @@ ul li{
   }
   
   .nvn-content-right .option .size {
-    margin-top: 23px;
+    margin-top: 30px;
   }
   .pt-9{
     padding-top: 9px;
@@ -1187,7 +1190,7 @@ ul li{
   .nvn-content-right .option .total {
     margin-top: 38px;
     padding: 10px 0 21px;
-    border-bottom: 1px solid #494949;
+    border-bottom: 1px solid #9a9a9a;
   }
   
   .nvn-content-right .option .total p {
@@ -1298,12 +1301,15 @@ ul li{
 /* Nhat */
 .nvn-title{
     font-size: 23px;
-    font-weight: bold;
+    font-weight: 800;
     padding: 20px 0 30px;
 }
 .nvn-header{
     height: 50px;
     border-width: 2px 2px 1px 2px; /*linh edit*/
+}
+.nvn-header p{
+  font-size: 23px;font-weight: bold; color: #494949;
 }
 .nvn .contain .bg-grey{
     background: transparent;
@@ -1366,9 +1372,18 @@ ul li{
 .pt-13{
     padding-top: 13px;
 }
+.total .nvn-total{
+  font-weight: 800;
+}
 .nvn-page5  .nvn-content-right .option .total{
     margin-top: 5px;
     border: none;
+}
+.option-item_price{
+  font-weight: bold;
+}
+.option-item_name{
+  font-weight: bold;
 }
 .nvn-page5  .nvn-content-right .option .line{
     margin-left: -15px;
@@ -1393,7 +1408,9 @@ ul li{
 .nvn-page5 .nvn-content-right .gutter{
     height: 495px;
 }
-
+.pt-12{
+  padding-top: 12px;
+}
 .nvn-page5 .nvn-btn {
     border-radius: 9999px;
     border: none;
@@ -1420,13 +1437,13 @@ ul li{
     }
   }
   .nvn .nvn-bottom{
-      min-height: 50px;
-      border-width: 1px 2px 2px;
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-      padding: 20px 0;
-      font-size: 1.125rem;
-      font-weight: 600;
+    min-height: 50px;
+    border-width: 1px 2px 2px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 20px 0;
+    font-size: 1.125rem;
+    font-weight: 600;
   }
   .nvn .nvn-footer{
     margin: 10px 0 0;
@@ -1476,8 +1493,8 @@ ul li{
 .modal .form-group label{
   display: block;
   text-align: left;
-  margin: 30px 15px 9px;
-  font-size: 16px;
+  margin: 30px 15px 10px;
+  font-size: 18px;
   font-weight: bold;
 }
 .modal .form-group input{
@@ -1569,7 +1586,8 @@ a{
 }
 .half .form .nvn-row .nvn-col-xs-6{
   padding:0 12px;
-}
+  margin-top: -2px;
+}.half .form .nvn-row .nvn-col-xs-6 
 .half .form  .form-group label{
   /* margin-top: 10px; */
 }
@@ -1579,17 +1597,18 @@ a{
 }
 .half .form .form-group.form-action span{
   width: calc(100% - 30px);
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 24px;
   font-weight: 500;
   text-align: left;
   padding-left: 13px;
+  margin-top: -6px;
 }
 
 .half.modal .form-group label{
   display: block;
   text-align: left;
-  margin: 36px 15px 8px;
+  margin: 36px 15px 10px;
   font-size: 18px;
 }
 .nvn-content-right_content a{
