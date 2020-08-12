@@ -176,12 +176,6 @@ ul li{
     font-size: 18px;
     display: flex;
     align-items: center;
-<<<<<<< Updated upstream
-=======
-    flex-direction: row;
-    justify-content: space-around;
-    font-weight: 800;
->>>>>>> Stashed changes
 }
 .nl-frm-p1 span{
     padding-bottom: 2px;
@@ -217,17 +211,6 @@ ul li{
     padding: 8px 0;
 }
 .nl-text-3{
-<<<<<<< Updated upstream
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.nl-row-detail{
-    width: 38%;
-    font-weight: 700;
-    border-left: 1px solid #c4c4c4;
-    border-right: 1px solid #c4c4c4;
-=======
     font-size: 1.25rem;
     font-weight: 800;
 }
@@ -268,16 +251,12 @@ ul li{
 }
 .nl-shipping__col{
   align-items: center;
->>>>>>> Stashed changes
 }
 .nl-row-total-price{
     width: 32%;
     font-weight: 700;
-<<<<<<< Updated upstream
-=======
     padding-left: 20px;
     padding-right: 32px;
->>>>>>> Stashed changes
 }
 .nl-row-3-ship-frm{
     width: 100%;
@@ -381,14 +360,11 @@ ul li{
     border: 1px solid #000;
     align-items: center;
     justify-content: flex-end;
-<<<<<<< Updated upstream
-=======
     border-bottom-left-radius: 29px;
     border-bottom-right-radius: 29px;
     padding: 20px 0;
     background-color: #fff;
     min-height: 51px;
->>>>>>> Stashed changes
 }
 .nl-bottom-total-price>span{
     display: inline-block;
@@ -657,8 +633,6 @@ ul li{
     .nl-col-sm-12{
         width: 100%;
     }
-<<<<<<< Updated upstream
-=======
     /*page 1*/
     .nl-text-at-bt__p1{
       line-height: 24px;
@@ -701,7 +675,6 @@ ul li{
     .nl-span-at-bt__p2{
       padding-right: 20px;
     }
->>>>>>> Stashed changes
 }
 @media (max-width: 975px){
   .nl-li-list>div{
@@ -717,11 +690,6 @@ ul li{
     margin-bottom: 20px;
     border-bottom: 1px solid #c4c4c4;
   }
-<<<<<<< Updated upstream
-  .nl-row-detail{
-    border-left: 0;
-    border-right: 0;
-=======
 
   .nl-row-detail::after,
   .nl-row-detail::before{
@@ -734,7 +702,6 @@ ul li{
   .nl-row-3-ship-frm .nl-row .nl-col1, .nl-row-3-ship-frm .nl-row .nl-col2{
     width: 20%;
     max-width: 64px;
->>>>>>> Stashed changes
   }
   .nl-row-3-ship-frm .nl-col3{
     margin-top: 20px;
@@ -1325,9 +1292,6 @@ ul li{
   }
   .bold{
     font-weight: bold;
-<<<<<<< Updated upstream
-  }
-=======
   }
 
 /* Nhat */
@@ -1604,9 +1568,9 @@ a{
 .half .form .nvn-row .nvn-col-xs-6{
   padding:0 12px;
 }
-.half .form  .form-group label{
-  /* margin-top: 10px; */
-}
+/* .half .form  .form-group label{
+  margin-top: 10px;
+} */
 .half .form .form-group.form-action input{
   width: 20px;height:20px;
   border: 1px solid #9a9a9a;
@@ -1765,9 +1729,9 @@ a{
     padding: 0 0 30px 75px;
   }
 }
-.container{
-  /* padding-left: 40px; */
-}
+/* .container{
+  padding-left: 40px;
+} */
 .nvn .content h3{
   color: #DF0A15;
     font-size: 23px;
@@ -1825,8 +1789,7 @@ a{
     padding: 0 30px;
   }
 }
-.nvn .content-item .gutter{
-}
+
 .nvn-col-md-3 .actions{
   margin: 30px 0 0 5px;
 }
@@ -2008,4 +1971,3 @@ a{
   max-width: 1152px;
   margin: auto;
 }
->>>>>>> Stashed changes
