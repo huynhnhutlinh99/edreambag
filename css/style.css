@@ -435,6 +435,9 @@ ul li{
     border: 1px solid #c4c4c4;
     padding: 0 20px;
 }
+.nl-date-picker-p2::placeholder{
+  color: #000;
+}
 .nl-ctn-coln{
     position: relative;
     width: 100%;
