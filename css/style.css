@@ -123,7 +123,7 @@ ul li{
 .nl-ul-list .nl-li-list{
     border: 1px solid #494949;
     border-radius: 10px;
-    padding: 40px 20px;
+    padding: 40px 0;
     background-color: #fff;
     margin: 10px;
 }
@@ -233,22 +233,51 @@ ul li{
 }
 .nl-text-3{
     font-size: 1.25rem;
-    font-weight: 900;
+    font-weight: 800;
+}
+.nl-text-2{
+  font-size: 1rem;
+  font-weight: 800;
+}
+.nl-text-1{
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 .nl-row-detail{
+    position: relative;
     width: 36%;
     font-weight: 700;
-    border-left: 1px solid #c4c4c4;
-    border-right: 1px solid #c4c4c4;
     padding-left: 20px;
     padding-right: 20px;
+    min-height: 180px;
+}
+.nl-row-detail::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 180px;
+  border-left: 1px solid #c4c4c4;
+  left: 0;
+  top: 0;
+}
+.nl-row-detail::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 180px;
+  border-left: 1px solid #c4c4c4;
+  right: 0;
+  top: 0;
+}
+.nl-shipping__col{
+  align-items: center;
 }
 .nl-row-total-price{
     width: 34%;
     font-weight: 700;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 32px;
 }
 .nl-row-3-ship-frm{
     width: 100%;
@@ -333,8 +362,8 @@ ul li{
     padding: 15px 10px;
 }
 .nl-ctn-total-price .nl-p-line-1{
-    font-weight: 400;
-    margin: 5px 5px 32px;
+  font-weight: 600;
+  margin: 5px 0 16px;
 }
 .color-blue{
     color: #000699;
@@ -655,15 +684,13 @@ ul li{
   .nl-li-list>div:nth-child(1) .nl-items-box{
     max-height: 100px;
   }
-  .nl-row-detail{
-    border-left: 0;
-    border-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+  .nl-row-detail::after,
+  .nl-row-detail::before{
+    border: 0 !important;
   }
   .nl-row-total-price{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .nl-row-3-ship-frm .nl-row .nl-col1, .nl-row-3-ship-frm .nl-row .nl-col2{
     width: 20%;
