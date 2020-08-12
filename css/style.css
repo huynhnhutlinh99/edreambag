@@ -413,6 +413,7 @@ ul li{
     line-height: 24px;
 }
 .nl-date-picker-p2{
+    font-weight: 600;
     height: 40px;
     width: 100%;
     border-radius: 20px;
