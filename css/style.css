@@ -114,7 +114,7 @@ ul li{
     flex-wrap: wrap;
 }
 .nl-row-p1{
-    margin-top: 29px;
+    margin: 29px 0;
     border: 1px solid #000;
     border-radius: 30px;
     border-radius: 30px;
@@ -560,7 +560,7 @@ ul li{
 }
 
 .nl-span-at-bt__p2{
-  padding-right: 20px;
+  padding-right: 50px;
   font-weight: 800;
   line-height: 32px;
   font-size: 1.125rem;
@@ -580,6 +580,16 @@ ul li{
     }
     .nl-text-at-bt__p2{
       text-align: right;
+    }
+    .nl-text-at-bt__p1 .nl-text-1{
+      padding-left: 50px !important;
+    }
+    .nl-text-at-bt__p2 .nl-text-4{
+      padding-right: 50px !important;
+    }
+    /*page 3*/
+    .nl-span-at-bt__p2{
+      padding-right: 50px !important;
     }
 }
 @media (min-width: 320px){
@@ -610,6 +620,7 @@ ul li{
       font-weight: 600;
       padding-left: 20px;
     }
+    /*page1_0*/
     .nl-text-at-bt__p2 .nl-text-3{
       font-size: 1.125rem;
       font-weight: 800;
@@ -620,6 +631,11 @@ ul li{
       font-size: 1.25rem;
       font-weight: 800;
       text-align: right;
+      padding-right: 20px;
+    }
+
+    
+    .nl-span-at-bt__p2{
       padding-right: 20px;
     }
 }
@@ -716,6 +732,7 @@ ul li{
     padding: 0;
     font-size: 13px;
   }
+
 }
 
 .flex{
@@ -738,8 +755,9 @@ ul li{
 /* Nhat */
 .nvn-bottom{
     width: 100%;
-    height: 40px;
+    height: auto;
     border: 1px solid #000;
+    line-height: 32px; /*linh edit*/
 }
 .nvn-row {
     display: -webkit-box;
@@ -1260,6 +1278,8 @@ ul li{
       width: 100%;
       font-size: 14px;
       margin-right: 0;
+      font-weight: 600;
+      background-color: #fff; /*linh edit*/
     }
   }
   
@@ -1283,9 +1303,7 @@ ul li{
 }
 .nvn-header{
     height: 50px;
-     border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    border-top: 2px solid #494949;
+    border-width: 2px 2px 1px 2px; /*linh edit*/
 }
 .nvn .contain .bg-grey{
     background: transparent;
@@ -1402,14 +1420,16 @@ ul li{
     }
   }
   .nvn .nvn-bottom{
-      height: 50px;
-      border-bottom-left-radius: 300px;
-      border-bottom-right-radius: 300px;
-      border-bottom: 2px solid #494949;
+      min-height: 50px;
+      border-width: 1px 2px 2px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      padding: 20px 0;
+      font-size: 1.125rem;
+      font-weight: 600;
   }
   .nvn .nvn-footer{
     margin: 10px 0 0;
-    height: 50px;
     border-bottom-left-radius: 300px;
     border-bottom-right-radius: 300px;
   
