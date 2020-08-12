@@ -362,6 +362,7 @@ ul li{
 .nl-ctn-total-price{
     border-radius: 20px;
     padding: 15px 10px;
+    border: 1px solid #c4c4c4;
 }
 .nl-ctn-total-price .nl-p-line-1{
   font-weight: 600;
